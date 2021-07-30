@@ -1,8 +1,8 @@
 /* eslint-disable max-len */
 import React, { Component } from 'react';
 import Form from '../../components/Form/Form';
-import fetchCall from '../../services/fetchCall';
-import Display from '../../components/Display';
+import { fetchCall } from '../../services/fetchCall';
+import Display from '../../components/Display/Display';
 import HistoryList from '../../components/History/HistoryList';
 
 export default class Resty extends Component {
@@ -10,6 +10,8 @@ export default class Resty extends Component {
       url: '',
       method: '',
       body: '',
+      history: [],
+      display: { 'Notice': 'Fetch results will display here!' }
     }
 
     componentDidMount() {
@@ -75,7 +77,6 @@ export default class Resty extends Component {
 
       return (
         <>
-          <Header />
           <section>
             <HistoryList history={history} onClick={this.handleClick} />
             <div>
