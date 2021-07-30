@@ -1,0 +1,63 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RadioButtons component renders RadioButtons 1`] = `
+<DocumentFragment>
+  <div>
+    <input
+      id="get"
+      name="method"
+      type="radio"
+      value="GET"
+    />
+    <label
+      for="get"
+    >
+      GET
+    </label>
+    <input
+      id="post"
+      name="method"
+      type="radio"
+      value="POST"
+    />
+    <label
+      for="post"
+    >
+      POST
+    </label>
+    <input
+      id="put"
+      name="method"
+      type="radio"
+      value="PUT"
+    />
+    <label
+      for="put"
+    >
+      PUT
+    </label>
+    <input
+      id="patch"
+      name="method"
+      type="radio"
+      value="PATCH"
+    />
+    <label
+      for="patch"
+    >
+      PATCH
+    </label>
+    <input
+      id="delete"
+      name="method"
+      type="radio"
+      value="DELETE"
+    />
+    <label
+      for="delete"
+    >
+      DELETE
+    </label>
+  </div>
+</DocumentFragment>
+`;

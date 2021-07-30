@@ -26,11 +26,11 @@ export default class Resty extends Component {
       this.setState({ [target.name]: target.value });
     }
 
-    handleSubmit = event => {
+    handleSubmit = (e) => {
       const { history, url, method } = this.state;
       const key = `${url}+${method}`;
 
-      event.preventDefault();
+      e.preventDefault();
       this.fetch();
 
       if(history.filter(item => item.key === key).length > 0 || method === '') return;
@@ -61,7 +61,7 @@ export default class Resty extends Component {
 
       this.setState({
         url: result.url,
-        method: result.mtehod,
+        method: result.method,
         body: result.body
       });
     }

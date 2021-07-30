@@ -6,7 +6,7 @@ import History from './History';
 const HistoryList = ({ history, onClick }) => {
   const historyDetails = history.map((item, i) => {
     return ( 
-      <li key={`$item.method}+${item.url}`} onClick={onClick}>
+      <li key={i} onClick={onClick}>
         <History method={item.method} url={item.url} id={`${item.url}+${item.method}`} />
       </li>
     );
