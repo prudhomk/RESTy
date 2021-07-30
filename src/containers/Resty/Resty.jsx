@@ -4,6 +4,7 @@ import Form from '../../components/Form/Form';
 import { fetchCall } from '../../services/fetchCall';
 import Display from '../../components/Display/Display';
 import HistoryList from '../../components/History/HistoryList';
+import styles from './Resty.css';
 
 export default class Resty extends Component {
     state = {
@@ -27,8 +28,8 @@ export default class Resty extends Component {
     }
 
     handleSubmit = (e) => {
-      const { history, url, method } = this.state;
-      const key = `${url}+${method}`;
+      const { history, url, method, body } = this.state;
+      const key = `${url}+${method}+${body}`;
 
       e.preventDefault();
       this.fetch();
@@ -40,7 +41,7 @@ export default class Resty extends Component {
           url: state.url,
           method: state.method,
           body: state.body,
-          key: `${state.url}+${state.method}`
+          key: `${state.url}+${state.method}+${state.body}`
         }]
       }));
 
@@ -77,7 +78,7 @@ export default class Resty extends Component {
 
       return (
         <>
-          <section>
+          <section className={styles.Resty}>
             <HistoryList history={history} onClick={this.handleClick} />
             <div>
               <Form

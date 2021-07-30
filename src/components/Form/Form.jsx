@@ -2,10 +2,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import RadioButtons from '../Radio/RadioButtons';
+import styles from './Form.css';
+
 
 const Form = ({ url, body, method, onSubmit, onChange }) => {
   return (
-    <section>
+    <section className={styles.Form}>
       <form onSubmit={onSubmit}>
         <input type="text" name="url" placeholder="URL" value={url} onChange={onChange} />
         <section>

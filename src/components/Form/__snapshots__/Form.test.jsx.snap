@@ -2,7 +2,9 @@
 
 exports[`Form component renders Form 1`] = `
 <DocumentFragment>
-  <section>
+  <section
+    class="Form"
+  >
     <form>
       <input
         name="url"
