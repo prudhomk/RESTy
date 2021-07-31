@@ -4,6 +4,7 @@ exports[`Display component renders Display 1`] = `
 <DocumentFragment>
   <pre
     class="Display"
+    data-testid="display"
   >
     <div
       class="react-json-view"

@@ -89,6 +89,7 @@ exports[`App component renders App 1`] = `
       </section>
       <pre
         class="Display"
+        data-testid="display"
       >
         <div
           class="react-json-view"
