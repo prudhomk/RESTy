@@ -1,0 +1,54 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HistoryList component renders HistoryList 1`] = `
+<DocumentFragment>
+  <ul
+    class="History"
+  >
+    <li>
+      <article
+        id="+PUT"
+      >
+        <p
+          id="+PUT"
+        >
+          PUT
+        </p>
+        <span
+          id="+PUT"
+        />
+      </article>
+    </li>
+    <li>
+      <article
+        id="+PATCH"
+      >
+        <p
+          id="+PATCH"
+        >
+          PATCH
+        </p>
+        <span
+          id="+PATCH"
+        />
+      </article>
+    </li>
+    <li>
+      <article
+        id="https://ac-vill.herokuapp.com/villagers+GET"
+      >
+        <p
+          id="https://ac-vill.herokuapp.com/villagers+GET"
+        >
+          GET
+        </p>
+        <span
+          id="https://ac-vill.herokuapp.com/villagers+GET"
+        >
+          https://ac-vill.herokuapp.com/villagers
+        </span>
+      </article>
+    </li>
+  </ul>
+</DocumentFragment>
+`;
