@@ -2,6 +2,13 @@
 
 exports[`App component renders App 1`] = `
 <DocumentFragment>
+  <header
+    class="Header"
+  >
+    <h1>
+      RESTy the RESTful Returner
+    </h1>
+  </header>
   <section
     class="Resty"
   >
