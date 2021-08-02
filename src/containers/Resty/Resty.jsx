@@ -4,6 +4,7 @@ import Form from '../../components/Form/Form';
 import { fetchCall } from '../../services/fetchCall';
 import Display from '../../components/Display/Display';
 import HistoryList from '../../components/History/HistoryList';
+import Header from '../../components/Header/Header';
 import styles from './Resty.css';
 
 export default class Resty extends Component {
@@ -78,6 +79,7 @@ export default class Resty extends Component {
 
       return (
         <>
+          <Header />
           <section className={styles.Resty}>
             <HistoryList history={history} onClick={this.handleClick} />
             <div>
